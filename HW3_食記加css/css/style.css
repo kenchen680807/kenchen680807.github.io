@@ -1,0 +1,72 @@
+/*一些基本設定*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-family: 'Noto Sans TC', sans-serif, serif;
+	box-sizing: border-box;
+
+}
+
+/*header*/
+.header{
+    background-color: 
+    #FFFFFF;
+    font-size: 50px;
+}
+div ul>li{
+	list-style-type: none;
+	list-style-position: inside;
+	display: inline-block; 
+	background-color: #91e6e6;
+}
+/*nav的設定*/
+nav a{
+    text-decoration: none;
+  	color: #FFFFFF;
+}
+/*/*網站主體設定*/
+/*.post{
+	background-color: #57A050;
+}
+.top{
+	background-color: #CB2020;
+}
+#top{
+	background-color: #BBBF93;
+}*/
+h1 {
+	color: coral;
+	font-size: 1.8em;
+}
+p{
+	font-size: 0.9em;
+	color: crimson;
+}
+div.container{
+	width: 80%;
+	height: 800px;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: #BBDEFB;
+	
+
+}
+article{
+	width:33.33%;
+	height: 200px;
+	text-align: center;
+	border: 1px solid black;
+	float: left;
+}
+article:nth-of-type(odd){
+    background-color: #2196F3;
+}
+article:first-child{
+	background-color: #E22222;
+}
+article:nth-of-type(1){
+	width:100%;
+	text-align: left;
+	background-color: #0D47A1;
+}
