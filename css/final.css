@@ -1,0 +1,66 @@
+/*一些基本設定*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-family: 'Noto Sans TC', sans-serif, serif;
+	box-sizing: border-box;
+
+}
+
+/*header*/
+.header{
+    background-color: #25D5E4;
+    font-size: 20px;
+}
+div ul>li{
+	list-style-type: none;
+	list-style-position: inside;
+	display: inline-block; 
+	background-color: #91e6e6;
+}
+/*nav的設定*/
+nav a{
+    text-decoration: none;
+  	color: #FFFFFF;
+}
+
+#top{
+	background-color: #269CD4;
+	height: 700px;
+}
+h1 {
+	color: coral;
+	font-size: 1.8em;
+}
+p{
+	font-size: 0.9em;
+	color: #EBD6D6;
+}
+h2 {
+	color: coral;
+	font-size: 2.0em;
+}
+p{
+	font-size: 1.5em;
+	color: crimson;
+}
+div.container{
+	width: 80%;
+	height: 500px;
+	padding: 10px;
+	margin: 0 auto;	
+
+}
+article{
+	width:33.33%;
+	height: 500px;
+	text-align: center;
+	border: 1px solid black;
+	float: left;
+}
+article:nth-of-type(4){
+	width:100%;
+	text-align: left;
+	background-color:#F3EC14 ;
+}
