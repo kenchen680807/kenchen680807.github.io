@@ -1,0 +1,164 @@
+@import "bourbon";
+
+//fonts
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+$font-curve: 'Satisfy', cursive;
+
+
+//colors
+$color-orange: #e46a2e;
+$color-snow: #fff;
+$color-silver: #c5c5c5;
+$color-silver-dark: #b4b4b4;
+$color-pink: #ffa8ea;
+
+body {
+  background: #202545;
+  margin-top: 80px;
+}
+h1 {
+  font-family: $font-curve;
+  color: $color-snow;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 0;
+}
+p {
+   font-family: $font-curve;
+  font-size: 1.8em;
+  text-align: center;
+  color: $color-snow;
+  margin-top: 0;
+}
+.iPhone {
+  background: $color-snow;
+  border: solid 2px $color-silver;
+  height: 500px;
+  width: 260px;
+  border-radius: 30px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.25);
+  @include transition(all .4s $ease-in-circ);
+}
+.iPhoneInner {
+  background: $color-snow;
+  border: solid 2px $color-silver-dark;
+  height: 496px;
+  width: 256px;
+  border-radius: 30px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
+  @include transition(all .4s $ease-in-circ);
+    .circButton {
+      background: $color-snow;
+      border: solid 2px #3b3b3b;
+      width: 36px;
+      height: 36px;
+      position: relative;
+      margin: 0 auto;
+      border-radius: 50%;
+      top: 48px;
+      cursor: pointer;
+    }
+  .smallTopCirc {
+    @include linear-gradient(#1f1f1f, #141414);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 6px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .camera {
+    @include linear-gradient(#1f1f1f, #141414);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px $color-silver;
+    top: 17px;
+    left: 85px;
+  }
+  .oval {
+    @include linear-gradient(#1f1f1f, #141414);
+    width: 50px;
+    height: 4px;
+    top: 14px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: -12px;
+    position: relative;
+  }
+}
+.iScreen {
+  position: relative;
+  width: 230px;
+  height: 400px;
+  margin: 0 auto;
+  top: 40px;
+  overflow: hidden;
+  @include linear-gradient(#1f1f1f, #141414);
+  border: solid 2px #3b3b3b;@include transition(all .4s $ease-in-circ);
+    .usman {
+      opacity: 0;
+      img {
+        display: block;
+        max-width: 140px;
+        margin: 0 auto;
+        top: 120px;
+        position: relative;
+        @include transition(all .6s);
+      }
+      .center {
+         display: block;
+         max-width: 140px;
+         margin: 0 auto;
+         right: 130px;
+         top: 0;
+         transition-delay: 2s;
+        @include transition(all .6s);
+         position: relative;
+      }
+    }
+    .showMe {
+       @include transition(all .4s $ease-in-circ);
+       opacity: 1;
+    }
+}
+.turnOn {
+  @include transition(all .4s $ease-in-circ);
+  background: $color-pink;
+  border: solid 2px #d1d1d1;
+}
+.rotate {
+  @include transform(rotate(90deg));
+}
+.rotateBack {
+  @include transform(rotate(-90deg));
+}
+.noShad {
+  box-shadow: none;
+}
+
+.flip {
+  width: 260px;
+  max-width: 100%;
+  right: 0;
+  top: 0;
+  text-align: center;
+  display: block;
+  position: absolute;
+  background: $color-pink;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  color: $color-snow;
+  font-family: $font-curve;
+  cursor: pointer;
+  font-size: 2em;
+  top: 10px;
+  right: 10px;
+  border: solid 2px $color-snow;
+}
